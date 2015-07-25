@@ -13,6 +13,10 @@
 		F42813DC1B638265006D77B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42813DB1B638265006D77B0 /* Images.xcassets */; };
 		F42813DF1B638265006D77B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42813DD1B638265006D77B0 /* LaunchScreen.xib */; };
 		F42813EB1B638265006D77B0 /* meme_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42813EA1B638265006D77B0 /* meme_testTests.swift */; };
+		F42813F51B638858006D77B0 /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42813F41B638858006D77B0 /* MEMELib.framework */; };
+		F42813F71B6388AB006D77B0 /* MEMELib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F42813F41B638858006D77B0 /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F42813F81B6388D8006D77B0 /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42813F41B638858006D77B0 /* MEMELib.framework */; };
+		F42813FA1B638901006D77B0 /* MEMELib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F42813F41B638858006D77B0 /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F42813F61B638882006D77B0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F42813F71B6388AB006D77B0 /* MEMELib.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42813F91B6388FB006D77B0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F42813FA1B638901006D77B0 /* MEMELib.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F42813CF1B638265006D77B0 /* meme_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meme_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42813D31B638265006D77B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +63,8 @@
 		F42813E41B638265006D77B0 /* meme_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meme_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42813E91B638265006D77B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F42813EA1B638265006D77B0 /* meme_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meme_testTests.swift; sourceTree = "<group>"; };
+		F42813F41B638858006D77B0 /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MEMELib.framework; path = ../../Downloads/B.1.0.0/MEMELib.framework; sourceTree = "<group>"; };
+		F42813FB1B638987006D77B0 /* meme_test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "meme_test-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42813F51B638858006D77B0 /* MEMELib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42813F81B6388D8006D77B0 /* MEMELib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +90,7 @@
 		F42813C61B638265006D77B0 = {
 			isa = PBXGroup;
 			children = (
+				F42813F41B638858006D77B0 /* MEMELib.framework */,
 				F42813D11B638265006D77B0 /* meme_test */,
 				F42813E71B638265006D77B0 /* meme_testTests */,
 				F42813D01B638265006D77B0 /* Products */,
@@ -91,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				F42813D31B638265006D77B0 /* Info.plist */,
+				F42813FB1B638987006D77B0 /* meme_test-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,6 +155,7 @@
 				F42813CB1B638265006D77B0 /* Sources */,
 				F42813CC1B638265006D77B0 /* Frameworks */,
 				F42813CD1B638265006D77B0 /* Resources */,
+				F42813F91B6388FB006D77B0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -139,6 +173,7 @@
 				F42813E01B638265006D77B0 /* Sources */,
 				F42813E11B638265006D77B0 /* Frameworks */,
 				F42813E21B638265006D77B0 /* Resources */,
+				F42813F61B638882006D77B0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -161,6 +196,11 @@
 				TargetAttributes = {
 					F42813CE1B638265006D77B0 = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F42813E31B638265006D77B0 = {
 						CreatedOnToolsVersion = 6.4;
@@ -340,9 +380,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/home/Downloads/B.1.0.0,
+				);
 				INFOPLIST_FILE = meme_test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/../Frameworks/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "meme_test/meme_test-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -350,9 +395,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/home/Downloads/B.1.0.0,
+				);
 				INFOPLIST_FILE = meme_test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/../Frameworks/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "meme_test/meme_test-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -363,6 +413,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					/Users/home/Downloads/B.1.0.0,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -382,6 +433,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					/Users/home/Downloads/B.1.0.0,
 				);
 				INFOPLIST_FILE = meme_testTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
